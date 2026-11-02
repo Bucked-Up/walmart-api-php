@@ -115,7 +115,7 @@ class WeightType extends BaseModel
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->setIfExists('value', $data ?? [], null);
         $this->setIfExists('unit', $data ?? [], null);

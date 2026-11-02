@@ -65,8 +65,8 @@ class BaseApi
      */
     public function __construct(
         Configuration $config,
-        ClientInterface $client = null,
-        HeaderSelector $selector = null,
+        ?ClientInterface $client = null,
+        ?HeaderSelector $selector = null,
     ) {
         $this->config = $config;
         $this->client = $client ?: new Client();

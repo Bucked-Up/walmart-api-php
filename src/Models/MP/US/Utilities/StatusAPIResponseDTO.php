@@ -190,7 +190,7 @@ class StatusAPIResponseDTO extends BaseModel
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->setIfExists('apiGroup', $data ?? [], null);
         $this->setIfExists('status', $data ?? [], null);

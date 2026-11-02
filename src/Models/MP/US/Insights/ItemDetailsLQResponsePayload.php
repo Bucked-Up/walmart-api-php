@@ -125,7 +125,7 @@ class ItemDetailsLQResponsePayload extends BaseModel
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->setIfExists('nextCursor', $data ?? [], null);
         $this->setIfExists('totalItems', $data ?? [], null);

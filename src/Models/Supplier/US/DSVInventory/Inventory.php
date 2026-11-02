@@ -137,7 +137,7 @@ class Inventory extends BaseModel
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->setIfExists('gtin', $data ?? [], null);
         $this->setIfExists('availabilityCode', $data ?? [], null);
