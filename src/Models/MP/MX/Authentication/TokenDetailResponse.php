@@ -131,7 +131,7 @@ class TokenDetailResponse extends BaseModel
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->setIfExists('scopes', $data ?? [], null);
         $this->setIfExists('expireAt', $data ?? [], '1560973098000');
