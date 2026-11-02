@@ -780,7 +780,7 @@ class EventsApi extends BaseApi
                     (string) $response->getBody()
                 );
             }
-            return [null, $statusCode, $response->getHeaders()];
+            return;
         } catch (ApiException $e) {
             switch ($e->getCode()) {
             }
@@ -1933,7 +1933,7 @@ class EventsApi extends BaseApi
                     (string) $response->getBody()
                 );
             }
-            return [null, $statusCode, $response->getHeaders()];
+            return;
         } catch (ApiException $e) {
             switch ($e->getCode()) {
             }
